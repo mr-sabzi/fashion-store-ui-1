@@ -2,13 +2,19 @@ import React from 'react'
 
 function HeroImage() {
   return (
-      <div className="w-[50%] relative h-full">
-        <img
-          src="/images/col-md-6.png"
-          className="absolute top-[0px] -right-[75px]  w-[102%] max-w-none h-auto object-cover"
-          alt="Background"
-        />
-      </div>
+<div className="md:w-1/2 w-full relative h-[620px]  overflow-visible ">
+  <img
+    src="/images/col-md-6.png"
+    className="absolute bottom-0 md:-right-16 right-0 h-full w-auto object-contain scale-100 md:block hidden"
+    alt=""
+  />
+    <img
+    src="/images/col-md-7.png"
+    className="absolute -bottom-5 right-0 h-full w-auto object-contain scale-100 md:hidden block "
+    alt=""
+  />
+</div>
+
   )
 }
 
